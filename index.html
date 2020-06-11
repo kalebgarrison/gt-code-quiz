@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-light bg-light">
+      <a href="">View Highscores</a>
+      <span class="navbar-text" id="timer" class="text-right">
+        Timer: 
+      </span>
+    </nav>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <h1 class="text-center" class="margin-left-auto">
+            Coding Quiz Challenge
+          </h1>
+       <div>
+        <p class="text-center" id="rules" id="questions"></p>
+       </div>
+          <div id="answer-buttons">
+            <button type="button" class="hide" class="answer-button" id="buttonA">
+              Answer 1
+            </button>
+            <br>
+            <button type="button" class="hide" class="answer-button" id="buttonB">
+              Answer 2
+            </button>
+            <br>
+            <button type="button" class="hide"  class="answer-button" id="buttonC">
+              Answer 3
+            </button>
+            <br>
+            <button type="button" class="hide" class="answer-button" id="buttonD">
+              Answer 4
+            </button>
+            <br>
+          </div>
+          <div class="row"></div>
+          <div class="col-text center">
+          <div>
+          <button
+            type="button" 
+            id="start-btn"
+          >
+            Start Quiz
+          </button>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <script src="./assets/script.js"></script>
+  </body>
+</html>
