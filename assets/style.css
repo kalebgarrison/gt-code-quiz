@@ -1,0 +1,41 @@
+.question {
+    font-weight: 200;
+}
+.answer-button{
+    /* padding: 10px; */
+    margin: 10px;
+    background-color: crimson;
+
+}
+
+#buttonA {
+    margin: 10px;
+}
+
+#buttonB {
+    margin: 10px;
+}
+
+#buttonC {
+    margin: 10px;
+}
+
+#buttonD {
+    margin: 10px;
+}
+
+
+#start-btn {
+    align-self: center;
+    background-color: darkslategray;
+    color: white;
+    display: ;
+}
+
+#startGame:hover{
+    border-color: black;
+}
+
+.hide {
+    display: none;
+}
