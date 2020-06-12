@@ -39,3 +39,57 @@
 .hide {
     display: none;
 }
+
+.correct {
+    color: green;
+}
+
+.wrong {
+    color: red;
+}
+
+#initial-input{
+    ;
+}
+
+/* Start/Answer button styling */
+
+#buttonA {
+    
+    color: white;
+    background-color: darkslategray;
+    width: 150px;
+    border-radius: 25px;
+
+}
+#buttonB{
+    
+    color: white;
+    background-color: darkslategray;
+    width: 150px;
+    border-radius: 25px;
+   
+}
+
+#buttonC{
+    
+    color: white;
+    background-color: darkslategray;
+    width: 150px;
+    border-radius: 25px;
+}
+
+#buttonD{
+    
+    color: white;
+    background-color: darkslategray;
+    width: 150px;
+    border-radius: 25px;
+}
+
+#start-btn {
+    align-self: center;
+    background-color: darkslategray;
+    color: white;
+    width: 150px;
+    border-radius: 25px;
