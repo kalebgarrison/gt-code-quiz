@@ -23,6 +23,8 @@ console.log(typeof codeQuestions)
 
 var timerLeft = 75
 
+// This Object array contains all of the questions, choices and answers. 
+
 var codeQuestions = [
     {
         question: "Commonly used data types DO NOT include:",
@@ -67,14 +69,10 @@ var codeQuestions = [
 
 ];
 
-// For loop for the questions
 
-
+// This displays the quiz rules. 
 
 gameRules.textContent = 'Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by ten seconds.'
-
-
-
 
 // Functions
 // This function starts the game. 
@@ -86,10 +84,11 @@ function start(){
     showButtons()
     countdownTimer()
     showQuestions()
-
 }
-console.log(codeQuestions[runningQuestionIndex].question)
 
+
+
+// This function displays the questions. 
 
 function showQuestions(){
 
@@ -103,9 +102,8 @@ function showQuestions(){
     } else {
         endGame()
     }
-
 }
-
+// This function provides a response when a user selects an answer. 
 
 function correctAnswer(choice){
     if (choice === codeQuestions[runningQuestionIndex].answer){
@@ -121,9 +119,6 @@ function correctAnswer(choice){
     showQuestions()
 
 }
-
-
-
 
 
 // This function controls the answer buttons showing or hiding on the page.
@@ -142,12 +137,17 @@ function countdownTimer(){
         if (timerLeft === 0) {
             clearInterval(gameTimer);
             headingHOne.textContent = "Coding Quiz Over!"
-        } else {
+        } else if (runningQuestionIndex > 4){
+            clearInterval(gameTimer);
+            timer.textContent = "Timer: " + 0;
+            
             console.log(typeof timer)
         }
     
     }, 1000);
 }
+
+// Function hides the buttons when the game is over. 
 
 function endGame(){
     headingHOne.textContent = "All Done!"
@@ -171,17 +171,6 @@ function displayMessage(type, message) {
     msgDiv.setAttribute("class", type);
   }
 
-//   function renderLastRegistered() {
-//     var highscoreMsg = localStorage.getItem("");
-  
-//     if (!email || !password) {
-//       return;
-//     }
-  
-//     userEmailSpan.textContent = email;
-//     userPasswordSpan.textContent = password;
-//   }
-  
 // Event Listeners
 startButton.addEventListener('click', start)
 buttonA.addEventListener('click', function(){
@@ -198,8 +187,10 @@ buttonD.addEventListener('click', function(){
 });
 
 initialBtn.addEventListener('click', function(event){
-
-    event.preventDefault()
-
+    event.preventDefault();
+    initialInput.value;
+    currentScore.value;
+    localStorage.setItem('initials', initialInput);
+    localStorage.setItem('score', currentScore);
+    displayMessage()
 })
-// hThree.textContent = 'Highscores: ' + currentScore;
