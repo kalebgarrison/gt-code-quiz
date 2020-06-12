@@ -13,23 +13,39 @@
     <link rel="stylesheet" href="./assets/style.css" />
   </head>
   <body>
-    <nav class="navbar navbar-light bg-light">
+    <nav class="navbar navbar-dark bg-dark">
       <a href="">View Highscores</a>
       <span class="navbar-text" id="timer" class="text-right">
         Timer: 
       </span>
+      <div class="navbar-text" class="text-center" id="score">
+          Score:
+      </div>
     </nav>
     <div class="container">
       <div class="row">
-        <div class="col">
+        <div class="col-sm-12">
           <h1 class="text-center" class="margin-left-auto">
             Coding Quiz Challenge
           </h1>
+          <div class="col-xs-1 center-block text-center">
+              <h3 id="correct-wrong">
+              </h3>
+          </div>
+          <div id="msg"></div>
+          <div class="col-xs-1 center-block text-center">
+              <form id="initial-form" class="hide">Enter Initials</form>
+              <input type="text" class="hide" name="Enter Initials" id="initial-input">
+              <input id="initial-btn" class="hide" type="submit" name="">
+          </div>
        <div>
-        <p class="text-center" id="rules" id="questions"></p>
+        <p class="text-center" id="rules"></p>
        </div>
-          <div id="answer-buttons">
-            <button type="button" class="hide" class="answer-button" id="buttonA">
+       <div class="col-xs-1 center-block text-center">
+           <p id="questions"></p>
+       </div>
+          <div id="answer-buttons" class="col-xs-1 center-block text-center">
+            <button type="button" class="hide " class="answer-button"  id="buttonA">
               Answer 1
             </button>
             <br>
@@ -48,7 +64,7 @@
           </div>
           <div class="row"></div>
           <div class="col-text center">
-          <div>
+          <div class="col-xs-1 center-block text-center">
           <button
             type="button" 
             id="start-btn"
