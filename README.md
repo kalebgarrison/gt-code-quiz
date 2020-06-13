@@ -21,9 +21,9 @@ Any feedback can be provided via email at [kalebgarrison@gmail.com](mailto:kaleb
 
 ## Usage 
 
-[Deployed Portfolio Site](https://kalebgarrison.github.io/javascript-password-generator/)
+[Deployed Portfolio Site](https://kalebgarrison.github.io/gt-code-quiz/)
 
-[GitHub Repo Site](https://github.com/kalebgarrison/javascript-password-generator)
+[GitHub Repo Site](https://github.com/kalebgarrison/gt-code-quiz)
 
 ![alt text](assets/images/passwordsite.png) Main Page
 
