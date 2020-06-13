@@ -25,7 +25,7 @@ Any feedback can be provided via email at [kalebgarrison@gmail.com](mailto:kaleb
 
 [GitHub Repo Site](https://github.com/kalebgarrison/gt-code-quiz)
 
-![alt text](assets/images/passwordsite.png) Main Page
+![alt text](assets/code-quiz.gif) 
 
 
 
